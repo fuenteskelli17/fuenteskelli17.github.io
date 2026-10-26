@@ -1,0 +1,530 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>XDXXapp：批量生成任务一次跑完，失败自动重试，效率翻倍不是吹的</title>
+<meta name="keywords" content="XDXXapp,批量生成,任务管理,自动重试,内容生成平台">
+<meta name="description" content="XDXXapp 是一款面向内容团队与个人创作者的批量任务生成工具，支持多模型调度、任务队列管理、失败自动重试与一键换模型重跑。页面实时展示每个任务的开始与结束时间、账号来源、耗时与字数统计，生成异常以醒目红色状态标注，操作按钮触手可及。">
+<link rel="canonical" href="https://xdxxap.pages.dev/">
+<meta property="og:type" content="website">
+<meta property="og:title" content="XDXXapp：批量生成任务一次跑完，失败自动重试，效率翻倍不是吹的">
+<meta property="og:description" content="XDXXapp 是一款面向内容团队与个人创作者的批量任务生成工具，支持多模型调度、任务队列管理、失败自动重试与一键换模型重跑。页面实时展示每个任务的开始与结束时间、账号来源、耗时与字数统计，生成异常以醒目红色状态标注，操作按钮触手可及。无论你是在运营多个站点、批量产出文章草稿，还是管理日常内容交付，XDXXapp 都能把分散的生成流程收进一张清晰的任务列表，让每一分钟的产出都看得见、管得住、追得回。">
+<meta property="og:url" content="https://xdxxap.pages.dev/">
+<meta property="og:site_name" content="XDXXapp">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="XDXXapp：批量生成任务一次跑完，失败自动重试，效率翻倍不是吹的">
+<meta name="twitter:description" content="XDXXapp 是一款面向内容团队与个人创作者的批量任务生成工具，支持多模型调度、任务队列管理、失败自动重试与一键换模型重跑。实时展示任务时间、账号、耗时与字数，异常状态醒目标注，操作触手可及。">
+<link rel="stylesheet" href="assets/vendor/foundation/css/foundation.min.css">
+
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@type":"WebSite",
+  "name":"XDXXapp",
+  "url":"https://xdxxap.pages.dev/",
+  "description":"XDXXapp 是一款面向内容团队与个人创作者的批量任务生成工具，支持多模型调度、任务队列管理、失败自动重试与一键换模型重跑，实时展示任务时间、账号、耗时与字数统计。",
+  "inLanguage":"zh-CN",
+  "potentialAction":{
+    "@type":"SearchAction",
+    "target":"https://xdxxap.pages.dev/?s={search_term_string}",
+    "query-input":"required name=search_term_string"
+  }
+}
+</script>
+<meta name="robots" content="index,follow,max-snippet:-1,max-image-preview:large">
+<meta name="applicable-device" content="pc,mobile">
+<meta http-equiv="Cache-Control" content="no-transform">
+<meta name="renderer" content="webkit">
+<meta name="format-detection" content="telephone=no">
+<script type="application/ld+json">{"@context":"https://ziyuan.baidu.com/contexts/cambrian.jsonld","@id":"https://xdxxap.pages.dev/","title":"XDXXapp：批量生成任务一次跑完，失败自动重试，效率翻倍不是吹的","pubDate":"2026-10-25T19:01:18","upDate":"2026-10-25T19:01:18"}</script>
+<link rel="stylesheet" href="assets/mfws96.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="container nav-wrap">
+    <a href="#top" class="logo"><span class="logo-mark">XD</span><span>XDXXapp</span></a>
+    <ul class="main-nav" id="mainNav">
+      <li><a href="#top" class="active">首页</a></li>
+      <li><a href="#sec-tasks">任务队列</a></li>
+      <li><a href="#sec-models">模型调度</a></li>
+      <li><a href="#sec-fail">失败重试</a></li>
+      <li><a href="#sec-news">更新动态</a></li>
+    </ul>
+    <div class="nav-right">
+      <div class="search-box"><input type="search" placeholder="搜索任务或关键词…" aria-label="搜索"></div>
+      <a href="#sec-cta" class="btn btn-primary btn-nav">立即开始</a>
+      <button class="nav-toggle" id="navToggle" aria-label="打开菜单">☰</button>
+    </div>
+  </div>
+</header>
+
+<main id="top">
+
+<!-- Hero -->
+<section class="hero">
+  <div class="container hero-grid">
+    <div>
+      <span class="hero-tag">批量任务 · 多模型 · 自动重试</span>
+      <h1><em>XDXXapp</em>：让每一批生成任务都跑得清清楚楚</h1>
+      <p class="hero-sub">多站点、多账号、多模型的生成任务挤在一起，最怕的就是不知道哪个在跑、哪个卡住、哪个失败了。XDXXapp 把所有任务收进一张实时列表：开始时间、结束耗时、字数产出、异常状态，一眼全看完。</p>
+      <div class="hero-actions">
+        <a href="#sec-cta" class="btn btn-primary btn-lg">免费创建任务</a>
+        <a href="#sec-tasks" class="btn btn-outline btn-lg">看任务列表示例</a>
+      </div>
+      <div class="hero-stats">
+        <div><div class="stat-num">12.6万+</div><div class="stat-label">累计完成任务</div></div>
+        <div><div class="stat-num">98.4%</div><div class="stat-label">自动重试成功率</div></div>
+        <div><div class="stat-num">15分钟</div><div class="stat-label">平均单批产出</div></div>
+      </div>
+    </div>
+    <div class="mock-panel" aria-hidden="true">
+      <div class="mock-head"><span>今日任务面板</span><span class="badge badge-run">运行中 3</span></div>
+      <div class="mock-row">
+        <div><div class="mock-name">站点目录页生成</div><div class="mock-meta">开始 09:12 · 用时 6m40s</div></div>
+        <div class="mock-meta">模型 deepseek-flash</div>
+        <div class="mock-meta">2,842 字</div>
+        <div><span class="badge badge-ok">已完成</span></div>
+      </div>
+      <div class="mock-row">
+        <div><div class="mock-name">产品描述批量改写</div><div class="mock-meta">开始 09:30 · 用时 12m05s</div></div>
+        <div class="mock-meta">模型 gpt-lite</div>
+        <div class="mock-meta">5,120 字</div>
+        <div><span class="badge badge-ok">已完成</span></div>
+      </div>
+      <div class="mock-row">
+        <div><div class="mock-name">长文摘要拆分</div><div class="mock-meta">开始 09:41 · 用时 15m28s</div></div>
+        <div class="mock-meta">模型 deepseek-flash</div>
+        <div class="mock-meta">3,746 字</div>
+        <div><span class="badge badge-fail">生成失败</span></div>
+      </div>
+      <div class="mock-row">
+        <div><div class="mock-name">问答内容扩充</div><div class="mock-meta">开始 09:55 · 运行中</div></div>
+        <div class="mock-meta">模型 glm-air</div>
+        <div class="mock-meta">1,203 字</div>
+        <div><span class="badge badge-run">排队执行</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 核心卖点 -->
+<section class="section" id="sec-features">
+  <div class="container">
+    <div class="section-head">
+      <span class="eyebrow">为什么选 XDXXapp</span>
+      <h2>把「跑任务」这件事做到不用盯梢</h2>
+      <p>从提交到产出，每个环节都有明确的状态反馈和兜底机制，你只需要在异常出现时点一下重试。</p>
+    </div>
+    <div class="grid-3">
+      <div class="card">
+        <div class="card-icon">⚡</div>
+        <h3>批量提交，队列自动排</h3>
+        <p>一次导入几十上百条任务，系统按优先级自动排队执行，不用一条条手动跑，也不用担心漏单。</p>
+      </div>
+      <div class="card">
+        <div class="card-icon">🔄</div>
+        <h3>失败自动重试</h3>
+        <p>生成中断、接口超时这类常见异常会自动触发重试；重试仍失败的，列表里红字标注，一键换模型重跑。</p>
+      </div>
+      <div class="card">
+        <div class="card-icon">🧮</div>
+        <h3>耗时与字数全记录</h3>
+        <p>每个任务的开始时间、结束时间、总耗时、产出字数都记录在案，月底复盘产能有据可查。</p>
+      </div>
+      <div class="card">
+        <div class="card-icon">🎛️</div>
+        <h3>多模型自由切换</h3>
+        <p>同一批任务可以按需分配到不同模型，跑得不顺随时换模型重试，成本和效果自己说了算。</p>
+      </div>
+      <div class="card">
+        <div class="card-icon">👥</div>
+        <h3>多账号隔离管理</h3>
+        <p>不同账号的任务独立记录、独立统计，团队协作时谁的产出一目了然，账目清晰不打架。</p>
+      </div>
+      <div class="card">
+        <div class="card-icon">📤</div>
+        <h3>产出一键导出</h2>
+        <p>完成的任务可按批次导出，正文、字数、耗时信息一并带上，直接进入下一步编辑或发布流程。</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 任务列表 -->
+<section class="section section-alt" id="sec-tasks">
+  <div class="container">
+    <div class="section-head">
+      <span class="eyebrow">任务队列</span>
+      <h2>一张列表看清所有任务的来龙去脉</h2>
+      <p>这是 XDXXapp 日常任务面板的真实模样——密集、清晰、每个异常都不藏着掖着。</p>
+    </div>
+    <div class="task-table">
+      <div class="tt-toolbar">
+        <strong>今日任务（共 128 条）</strong>
+        <div style="display:flex;gap:10px;flex-wrap:wrap">
+          <span class="badge badge-ok">已完成 121</span>
+          <span class="badge badge-run">运行中 4</span>
+          <span class="badge badge-fail">失败 3</span>
+        </div>
+      </div>
+      <div class="tt-head">
+        <span>网站 / 任务</span><span>时间</span><span>模型与账号</span><span>耗时产出</span><span>状态与操作</span>
+      </div>
+      <div class="tt-row">
+        <div><div class="tt-title">木头泛目录程序</div><div class="tt-sub">mtfmlc.pages.dev</div></div>
+        <div class="tt-time">开始 10-17 21:36<br>结束 10-17 21:51</div>
+        <div><span class="badge badge-run">GH</span><div class="tt-sub">deepseek-flash · sampsonallison9711</div></div>
+        <div><span class="tt-fail">生成 15m28s</span><div class="tt-sub">3,746 字</div></div>
+        <div class="tt-actions tt-hide-xs"><span class="badge badge-fail">生成失败</span><button class="btn btn-ghost">重试</button><button class="btn btn-ghost">换模型</button><button class="btn btn-danger">删除</button></div>
+      </div>
+      <div class="tt-row">
+        <div><div class="tt-title">行业词库批量扩写</div><div class="tt-sub">ciiku.pages.dev</div></div>
+        <div class="tt-time">开始 10-17 20:02<br>结束 10-17 20:14</div>
+        <div><span class="badge badge-run">GL</span><div class="tt-sub">glm-air · chenwriting02</div></div>
+        <div><strong>生成 12m04s</strong><div class="tt-sub">6,918 字</div></div>
+        <div class="tt-actions tt-hide-xs"><span class="badge badge-ok">已完成</span><button class="btn btn-ghost">导出</button></div>
+      </div>
+      <div class="tt-row">
+        <div><div class="tt-title">产品页描述改写</div><div class="tt-sub">shopdesc.pages.dev</div></div>
+        <div class="tt-time">开始 10-17 19:40<br>结束 10-17 19:47</div>
+        <div><span class="badge badge-run">GP</span><div class="tt-sub">gpt-lite · mallteam03</div></div>
+        <div><strong>生成 7m22s</strong><div class="tt-sub">4,305 字</div></div>
+        <div class="tt-actions tt-hide-xs"><span class="badge badge-ok">已完成</span><button class="btn btn-ghost">导出</button></div>
+      </div>
+      <div class="tt-row">
+        <div><div class="tt-title">长文问答拆分</div><div class="tt-sub">qa-split.pages.dev</div></div>
+        <div class="tt-time">开始 10-17 19:15 · 运行中</div>
+        <div><span class="badge badge-run">GH</span><div class="tt-sub">deepseek-flash · sampsonallison9711</div></div>
+        <div><strong>运行 9m41s</strong><div class="tt-sub">已产出 1,872 字</div></div>
+        <div class="tt-actions tt-hide-xs"><span class="badge badge-run">执行中</span><button class="btn btn-ghost">暂停</button></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 频道入口 -->
+<section class="section" id="sec-channels">
+  <div class="container">
+    <div class="section-head">
+      <span class="eyebrow">内容频道</span>
+      <h2>按场景找对你的用法</h2>
+      <p>不同业务节奏，XDXXapp 都有对应的跑法和经验沉淀。</p>
+    </div>
+    <div class="grid-4">
+      <a href="#sec-tasks" class="channel-card">
+        <h3><span class="badge badge-ok">热门</span>批量生成实战</h3>
+        <p>百条级任务怎么排、怎么控速、怎么保证产出稳定，实战经验都在这里。</p>
+        <span class="more">进入频道 →</span>
+      </a>
+      <a href="#sec-fail" class="channel-card">
+        <h3><span class="badge badge-fail">必读</span>失败排查手册</h3>
+        <p>生成失败的常见原因、重试策略与换模型技巧，遇到异常先来这里。</p>
+        <span class="more">进入频道 →</span>
+      </a>
+      <a href="#sec-models" class="channel-card">
+        <h3><span class="badge badge-run">新上</span>模型效果对比</h3>
+        <p>不同模型在速度、字数、质量上的真实跑分数据，选型不再凭感觉。</p>
+        <span class="more">进入频道 →</span>
+      </a>
+      <a href="#sec-news" class="channel-card">
+        <h3><span class="badge badge-ok">更新</span>版本更新日志</h3>
+        <p>每次功能迭代、性能优化和问题修复的完整记录，跟进产品节奏。</p>
+        <span class="more">进入频道 →</span>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- 模型调度 -->
+<section class="section section-alt" id="sec-models">
+  <div class="container">
+    <div class="section-head">
+      <span class="eyebrow">模型调度</span>
+      <h2>选对模型，成本和效果差一大截</h2>
+      <p>同样的 10,000 字任务，不同模型的速度和稳定性差异明显。XDXXapp 内置调度策略，按需分配。</p>
+    </div>
+    <div class="task-table">
+      <div class="tt-head">
+        <span>模型</span><span>平均耗时（万字）</span><span>成功率</span><span class="tt-hide-sm">适用场景</span><span>推荐指数</span>
+      </div>
+      <div class="tt-row">
+        <div class="tt-title">deepseek-flash</div><div>约 14 分钟</div><div><span class="badge badge-ok">97.2%</span></div><div class="tt-sub tt-hide-sm">长文批量产出，性价比首选</div><div><span class="badge badge-ok">★★★★★</span></div>
+      </div>
+      <div class="tt-row">
+        <div class="tt-title">gpt-lite</div><div>约 11 分钟</div><div><span class="badge badge-ok">95.8%</span></div><div class="tt-sub tt-hide-sm">短文本改写，速度快、节奏稳</div><div><span class="badge badge-ok">★★★★☆</span></div>
+      </div>
+      <div class="tt-row">
+        <div class="tt-title">glm-air</div><div>约 16 分钟</div><div><span class="badge badge-ok">96.1%</span></div><div class="tt-sub tt-hide-sm">结构化内容，条理清晰</div><div><span class="badge badge-ok">★★★★☆</span></div>
+      </div>
+      <div class="tt-row">
+        <div class="tt-title">qwen-mini</div><div>约 13 分钟</div><div><span class="badge badge-run">93.4%</span></div><div class="tt-sub tt-hide-sm">备用通道，主力异常时兜底</div><div><span class="badge badge-run">★★★☆☆</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 步骤 -->
+<section class="section" id="sec-steps">
+  <div class="container">
+    <div class="section-head">
+      <span class="eyebrow">上手路径</span>
+      <h2>三步跑通第一批任务</h2>
+      <p>不需要部署环境，不需要写脚本，注册后当天就能出活。</p>
+    </div>
+    <div class="grid-3">
+      <div class="card step-card"><span class="num">1</span><h3>导入任务清单</h3><p>粘贴或上传你的任务列表，一行一个，自动去重并进入待执行队列。</p></div>
+      <div class="card step-card"><span class="num">2</span><h3>选择模型与账号</h3><p>为整批或单条任务指定模型和执行账号，也可以交给系统自动分配。</p></div>
+      <div class="card step-card"><span class="num">3</span><h3>盯着面板收结果</h3><p>任务跑完自动标记，失败的红色高亮并支持一键重试，产出随时导出。</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- 数据条 -->
+<section class="section" id="sec-metrics" style="padding-top:0">
+  <div class="container">
+    <div class="metrics">
+      <div><div class="stat-num">128万</div><div class="stat-label">累计生成字数</div></div>
+      <div><div class="stat-num">4,300+</div><div class="stat-label">活跃使用账号</div></div>
+      <div><div class="stat-num">99.1%</div><div class="stat-label">任务队列可用性</div></div>
+      <div><div class="stat-num">24h</div><div class="stat-label">异常响应时长</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- 失败重试专题 -->
+<section class="section section-alt" id="sec-fail">
+  <div class="container">
+    <div class="section-head">
+      <span class="eyebrow">失败兜底</span>
+      <h2>失败了不等于白跑一趟</h2>
+      <p>XDXXapp 的重试机制不只停留在「再试一次」，而是带策略的恢复。</p>
+    </div>
+    <div class="grid-3">
+      <div class="card">
+        <span class="card-num">策略一</span>
+        <h3>指数退避重试</h3>
+        <p>接口限流或临时超时，系统按递增间隔自动重试三次，绝大多数抖动都在这一层消化掉。</p>
+      </div>
+      <div class="card">
+        <span class="card-num">策略二</span>
+        <h3>换模型接力</h3>
+        <p>主模型持续失败时，可一键把任务切到备用模型继续跑，已完成部分不会浪费。</p>
+      </div>
+      <div class="card">
+        <span class="card-num">策略三</span>
+        <h3>断点续写</h3>
+        <p>长文任务中途失败，重新执行时从已产出段落续写，不从头再来，省时省钱。</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 更新动态 -->
+<section class="section" id="sec-news">
+  <div class="container">
+    <div class="section-head">
+      <span class="eyebrow">更新动态</span>
+      <h2>最近的产品动态与实战分享</h2>
+    </div>
+    <div class="news-list">
+      <a href="#sec-news" class="news-item">
+        <div class="news-date">02-18</div>
+        <div class="news-body"><h3>队列引擎升级：万条任务并发不再卡面板</h3><p>任务列表加载速度提升 6 倍，批量导入上限提升至 2,000 条/次。</p></div>
+      </a>
+      <a href="#sec-news" class="news-item">
+        <div class="news-date">02-05</div>
+        <div class="news-body"><h3>新增断点续写：长文失败重跑不再从头开始</h3><p>针对 5,000 字以上任务，续写模式平均节省 62% 的重复生成成本。</p></div>
+      </a>
+      <a href="#sec-news" class="news-item">
+        <div class="news-date">01-22</div>
+        <div class="news-body"><h3>实测四款主流模型的万字任务跑分报告</h3><p>速度、成功率、单字成本三个维度横向对比，附选型建议。</p></div>
+      </a>
+      <a href="#sec-news" class="news-item">
+        <div class="news-date">01-09</div>
+        <div class="news-body"><h3>多账号统计上线：团队产出核算一个页面搞定</h3><p>按账号维度汇总耗时、字数与失败率，月底对账不再翻记录。</p></div>
+      </a>
+    </div>
+    <div class="news-more"><a href="#sec-news" class="btn btn-outline">查看更多动态</a></div>
+  </div>
+</section>
+
+<!-- 评价 -->
+<section class="section section-alt" id="sec-quotes">
+  <div class="container">
+    <div class="section-head">
+      <span class="eyebrow">用户反馈</span>
+      <h2>他们已经在用 XDXXapp 干活了</h2>
+    </div>
+    <div class="grid-3">
+      <div class="quote-card">
+        <div class="stars">★★★★★</div>
+        <p>「以前失败的任务得自己翻日志找原因，现在红字标出来，点一下换模型就接着跑，单批任务的成功率从八成拉到了九成八。」</p>
+        <div class="quote-who"><div class="avatar">林</div><div><strong>林先生</strong><span>独立站运营</span></div></div>
+      </div>
+      <div class="quote-card">
+        <div class="stars">★★★★★</div>
+        <p>「最实用的是耗时和字数记录，给客户交付的时候直接截图任务面板，产出多少、跑了多久，清清楚楚，不用再手工做表。」</p>
+        <div class="quote-who"><div class="avatar">周</div><div><strong>周晓雯</strong><span>内容工作室主理人</span></div></div>
+      </div>
+      <div class="quote-card">
+        <div class="stars">★★★★☆</div>
+        <p>「多账号隔离做得好，五个同事共用一套任务队列，各自的数据互不干扰，月底核算产能只用五分钟。」</p>
+        <div class="quote-who"><div class="avatar">吴</div><div><strong>吴迪</strong><span>新媒体团队负责人</span></div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section class="section" id="sec-faq">
+  <div class="container" style="max-width:860px">
+    <div class="section-head">
+      <span class="eyebrow">常见问题</span>
+      <h2>关于 XDXXapp 你可能想问</h2>
+    </div>
+    <details class="faq-item" open>
+      <summary>单次最多能提交多少条任务？</summary>
+      <div class="faq-body">单次批量导入支持 2,000 条任务，队列会按优先级自动排队执行。如果任务量更大，可以分批导入，历史任务不受数量限制。</div>
+    </details>
+    <details class="faq-item">
+      <summary>任务失败了怎么办，会不会白花钱？</summary>
+      <div class="faq-body">失败任务会先经过自动重试，仍失败才标记为异常并全额退还该任务消耗的额度。你也可以手动选择换模型重跑或断点续写。</div>
+    </details>
+    <details class="faq-item">
+      <summary>可以同时使用多个模型吗？</summary>
+      <div class="faq-body">可以。整批任务可指定统一模型，也可以对单条任务单独指定；失败重试时切换模型不会丢失已完成的内容。</div>
+    </details>
+    <details class="faq-item">
+      <summary>团队多人使用时数据会混在一起吗？</summary>
+      <div class="faq-body">不会。每个账号的任务、额度与统计相互独立，管理员可以在一个面板里查看全团队的汇总数据。</div>
+    </details>
+    <details class="faq-item">
+      <summary>生成的记录保存多久？</summary>
+      <div class="faq-body">任务记录与产出内容默认保存 180 天，重要批次可手动标记归档，归档内容长期保留并可随时导出。</div>
+    </details>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="cta-band" id="sec-cta">
+  <h2>下一批任务，交给 XDXXapp 来跑</h2>
+  <p>注册即送体验额度，第一批任务跑通全程免费，跑不顺随时走，不绑定、不套路。</p>
+  <a href="#top" class="btn btn-primary btn-lg">免费创建我的第一个任务</a>
+</section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a href="#top" class="logo" style="color:#fff"><span class="logo-mark">XD</span><span>XDXXapp</span></a>
+        <p>批量任务生成与队列管理工具，支持多模型调度、失败自动重试、耗时与字数全程记录，让内容产出流程清晰可控。</p>
+      </div>
+      <div>
+        <h4>产品</h4>
+        <ul>
+          <li><a href="#sec-features">功能总览</a></li>
+          <li><a href="#sec-tasks">任务队列</a></li>
+          <li><a href="#sec-models">模型调度</a></li>
+          <li><a href="#sec-fail">失败重试</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>内容</h4>
+        <ul>
+          <li><a href="#sec-channels">批量生成实战</a></li>
+          <li><a href="#sec-fail">失败排查手册</a></li>
+          <li><a href="#sec-models">模型效果对比</a></li>
+          <li><a href="#sec-news">更新日志</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>支持</h4>
+        <ul>
+          <li><a href="#sec-faq">常见问题</a></li>
+          <li><a href="#sec-cta">开始使用</a></li>
+          <li><a href="#sec-quotes">用户反馈</a></li>
+          <li><a href="#top">返回首页</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">© 2026 XDXXapp · xdxxap.pages.dev · 保留所有权利</div>
+  </div>
+</footer>
+
+<script>
+document.getElementById('navToggle').addEventListener('click',function(){
+  document.getElementById('mainNav').classList.toggle('open');
+});
+document.querySelectorAll('#mainNav a').forEach(function(a){
+  a.addEventListener('click',function(){
+    document.getElementById('mainNav').classList.remove('open');
+    document.querySelectorAll('#mainNav a').forEach(function(x){x.classList.remove('active')});
+    a.classList.add('active');
+  });
+});
+</script>
+</body>
+</html
+<div class="footer-brand">
+        <a href="#top" class="logo" style="color:#fff"><span class="logo-mark">XD</span><span>XDXXapp</span></a>
+        <p>批量任务生成与队列管理工具，支持多模型调度、失败自动重试、耗时与字数全程记录，让内容产出流程清晰可控。</p>
+      </div>
+      <div>
+        <h4>产品功能</h4>
+        <ul>
+          <li><a href="#sec-features">功能总览</a></li>
+          <li><a href="#sec-tasks">任务队列</a></li>
+          <li><a href="#sec-models">模型调度</a></li>
+          <li><a href="#sec-fail">失败重试</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>内容频道</h4>
+        <ul>
+          <li><a href="#sec-channels">批量生成实战</a></li>
+          <li><a href="#sec-fail">失败排查手册</a></li>
+          <li><a href="#sec-models">模型效果对比</a></li>
+          <li><a href="#sec-news">更新日志</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>帮助支持</h4>
+        <ul>
+          <li><a href="#sec-faq">常见问题</a></li>
+          <li><a href="#sec-cta">开始使用</a></li>
+          <li><a href="#sec-quotes">用户反馈</a></li>
+          <li><a href="#top">返回首页</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2026 XDXXapp · xdxxap.pages.dev · 保留所有权利</p>
+    </div>
+  </div>
+</footer>
+
+<script>
+(function(){
+  var toggle = document.getElementById('navToggle');
+  var nav = document.getElementById('mainNav');
+  if (toggle && nav) {
+    toggle.addEventListener('click', function(){
+      nav.classList.toggle('open');
+    });
+  }
+  var links = document.querySelectorAll('#mainNav a');
+  links.forEach(function(a){
+    a.addEventListener('click', function(){
+      if (nav) nav.classList.remove('open');
+      links.forEach(function(x){ x.classList.remove('active'); });
+      a.classList.add('active');
+    });
+  });
+})();
+</script>
+</body>
+</html>
